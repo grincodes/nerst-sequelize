@@ -1,0 +1,35 @@
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "badoo@gmail.com",
+    "password" : "wahala",
+    "isVerified" : false
+}
+
+
+###
+
+PATCH  http://localhost:3000/users/848cefcd-3d1a-466e-b22f-fdc2a77be5a1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "dongo1@gmail.com",
+    "isVerified" : true
+}
+
+###
+POST http://localhost:3000/users/email HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "badoo@gmail.com"
+}
+
+###
+GET  http://localhost:3000/users HTTP/1.1
+
+
+###
+GET http://localhost:3000/users/848cefcd-3d1a-466e-b22f-fdc2a77be5a1 HTTP/1.1
+
